@@ -38,6 +38,8 @@ public class HttpRequest {
 	URI = tmp[1].substring(0);
 	//System.out.println("URI is: " + URI);
 	version = tmp[2];
+	URI = URI.substring(7);
+	System.out.println("URI is: " + URI)
 	
 	if (URI.contains(":")) {
         // Extract host and port if present
